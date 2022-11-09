@@ -2,7 +2,7 @@
 
 REST-Rant is an app where users can review restaurants.
 
-## Routes
+## Routes Table
 
 | Method | Path                     | Purpose                                           |
 | ------ | ------------------------ | ------------------------------------------------- |
@@ -20,8 +20,10 @@ REST-Rant is an app where users can review restaurants.
 
 ## Data Info to be stored on the places
 
-| Name | (string) |
-| City | (string) |
-| State | (string) |
+| Info    | Info     |
+| ------- | -------- |
+| Name    | (string) |
+| City    | (string) |
+| State   | (string) |
 | Cuisine | (string) |
 | Picture | (string) |
