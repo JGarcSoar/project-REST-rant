@@ -8,14 +8,14 @@ router.get("/", (req, res) => {
       city: "Seattle",
       state: "WA",
       cuisines: "Thai, Pan-Asian",
-      pic: "http://placekitten.com/250/250",
+      pic: "../images/thai-food.jpg",
     },
     {
       name: "Coding Cat Cafe",
       city: "Phoenix",
       state: "AZ",
       cuisines: "Coffee, Bakery",
-      pic: "http://placekitten.com/250/250",
+      pic: "../images/kittens.jpg",
     },
   ];
   res.render("places/index", { places });
