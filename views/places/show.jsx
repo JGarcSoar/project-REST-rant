@@ -23,6 +23,16 @@ function show(data) {
             <stong>- {c.author}</stong>
           </h3>
           <h4>Rating: {c.stars}</h4>
+          <form
+            method="POST"
+            action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}
+          >
+            <input
+              type="submit"
+              className="btn btn-danger"
+              value="Delete Comment"
+            />
+          </form>
         </div>
       );
     });
@@ -34,9 +44,9 @@ function show(data) {
         <div className="col-sm-6">
           <p className="text-center">{data.place.cuisines}</p>
           <img src={data.place.pic} alt={data.place.name} />
-          <h3>
+          {/* <h3>
             Located in {data.place.city}, {data.place.state}
-          </h3>
+          </h3> */}
           <p className="text-center">
             Located in {data.place.city}, {data.place.state}
           </p>
