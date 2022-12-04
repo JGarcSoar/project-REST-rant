@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const methodOverride = require("method-override");
 const app = express();
+const PORT = process.env.PORT;
 
 // Express Settings
 app.set("views", __dirname + "/views");
@@ -24,6 +25,6 @@ app.get("*", (req, res) => {
 });
 
 // Listen for Connections
-app.listen(process.env.PORT);
+app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
 
 module.exports = app;
